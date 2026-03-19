@@ -25,9 +25,9 @@
 class VSocket
 {
 private:
-   int connectIPv4(const char*, int);
-   int connectIPv6(const char*, int);
-   
+   int connectIPv4(const char *, int);
+   int connectIPv6(const char *, int);
+
 protected:
    int sockId; // Socket identifier
    bool IPv6;  // Is IPv6 socket?
@@ -47,4 +47,9 @@ public:
    virtual size_t Read(void *, size_t) = 0;
    virtual size_t Write(const void *, size_t) = 0;
    virtual size_t Write(const char *) = 0;
+
+   // UDP
+   int Bind(int);
+   size_t sendTo(const void *, size_t, void *);
+   size_t recvFrom(void *, size_t, void *);
 };
