@@ -107,9 +107,17 @@ AddrSpace::AddrSpace(OpenFile *executable)
     if (memoryMap == NULL)
     {
         memoryMap = new BitMap(NumPhysPages);
-    }
 
+        // Ocupamos paginas para ver si la asignacion está bien
+        memoryMap->Mark(0);
+        memoryMap->Mark(2);
+        memoryMap->Mark(4);
+        memoryMap->Mark(6);
+        memoryMap->Mark(8);
+        memoryMap->Mark(10);
+    }
     executable->ReadAt((char *)&noffH, sizeof(noffH), 0);
+
     if ((noffH.noffMagic != NOFFMAGIC) && (WordToHost(noffH.noffMagic) == NOFFMAGIC))
         SwapHeader(&noffH);
     ASSERT(noffH.noffMagic == NOFFMAGIC);
