@@ -1,0 +1,1 @@
+El trabajo se hizo en clase en grupo, por lo cual el trabajo es el mismo, porque fue hecho en conjunto
