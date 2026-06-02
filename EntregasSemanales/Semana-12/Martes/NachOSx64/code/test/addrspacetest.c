@@ -1,17 +1,17 @@
 #include "syscall.h"
 
 /* Este proceso sirve para probar que el programa cargue correctamente las
-	páginas en el addrspace.
+	pï¿½ginas en el addrspace.
 	Requiere que se encuentre implementado el system call Write() y el system
-	call Exit() (aunque únicamente porque el programa lo llama al final)
+	call Exit() (aunque ï¿½nicamente porque el programa lo llama al final)
 	
-	Se recomienda que las páginas físicas en memoria se guarden en desorden (p.e.
-	página virtual 1 en página física 2, página virtual 2 en página física 4,
+	Se recomienda que las pï¿½ginas fï¿½sicas en memoria se guarden en desorden (p.e.
+	pï¿½gina virtual 1 en pï¿½gina fï¿½sica 2, pï¿½gina virtual 2 en pï¿½gina fï¿½sica 4,
 	etc.) 
 	
-	El programa crear un buffer de 1024 bytes (4 páginas) y lo llena con
-	27 carácteres. Si el programa addrspace está correctamente implementado
-	debería escribir:
+	El programa crear un buffer de 1024 bytes (4 pï¿½ginas) y lo llena con
+	27 carï¿½cteres. Si el programa addrspace estï¿½ correctamente implementado
+	deberï¿½a escribir:
 	
 abcdefghijklmnopqrstuvwxyz{abcdefghijklmnopqrstuvwxyz{abcdefghijklmnopqrstuvwxyz{abcdefghijklmnopqrstuvwxyz{abcdefghijklmnopqr
 stuvwxyz{abcdefghijklmnopqrstuvwxyz{abcdefghijklmnopqrstuvwxyz{abcdefghijklmnopqrstuvwxyz{abcdefghijklmnopqrstuvwxyz{abcdefghi
@@ -38,4 +38,6 @@ void main () {
 		Write(buffer,1024,1);
 		i++;
 	}
+
+	Exit(0);
 } 	

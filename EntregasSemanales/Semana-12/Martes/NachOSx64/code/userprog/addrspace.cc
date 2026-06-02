@@ -21,8 +21,6 @@
 #include "noff.h"
 #include "bitmap.h"
 
-static BitMap *memoryMap = NULL;
-
 //----------------------------------------------------------------------
 // SwapHeader
 // 	Do little endian to big endian conversion on the bytes in the
@@ -104,20 +102,6 @@ AddrSpace::AddrSpace(OpenFile *executable)
     NoffHeader noffH;
     unsigned int i, size;
 
-    if (memoryMap == NULL){
-
-        memoryMap = new BitMap(NumPhysPages);
-
-        // Ocupamos paginas para ver como queda la asignacion
-        /*
-        memoryMap->Mark(0);
-        memoryMap->Mark(2);
-        memoryMap->Mark(4);
-        memoryMap->Mark(6);
-        memoryMap->Mark(8);
-        memoryMap->Mark(10);
-        */
-    }
     executable->ReadAt((char *)&noffH, sizeof(noffH), 0);
 
     if ((noffH.noffMagic != NOFFMAGIC) && (WordToHost(noffH.noffMagic) == NOFFMAGIC))
@@ -130,15 +114,13 @@ AddrSpace::AddrSpace(OpenFile *executable)
     numPages = divRoundUp(size, PageSize);
     size = numPages * PageSize;
 
-    ASSERT(numPages <= NumPhysPages); // check we're not trying
-                                      // to run anything too big --
-                                      // at least until we have
-                                      // virtual memory
+    
     ASSERT((int)numPages <= memoryMap->NumClear());
 
     DEBUG('a', "Initializing address space, num pages %d, size %d\n", numPages, size);
     // first, set up the translation
     this->pageTable = new TranslationEntry[numPages];
+    this->ownedPages = new bool[numPages];
     for (i = 0; i < numPages; i++)
     {
         int physicalPage = memoryMap->Find();
@@ -151,6 +133,7 @@ AddrSpace::AddrSpace(OpenFile *executable)
         pageTable[i].use = false;
         pageTable[i].dirty = false;
         pageTable[i].readOnly = false;
+        ownedPages[i] = true;
     }
 
     // zero out the entire address space, to zero the unitialized data segment
@@ -174,6 +157,37 @@ AddrSpace::AddrSpace(OpenFile *executable)
     }
 }
 
+AddrSpace::AddrSpace(AddrSpace *parent)
+{
+    numPages = parent->numPages;
+
+    this->pageTable = new TranslationEntry[numPages];
+    this->ownedPages = new bool[numPages];
+
+    int stackPages = divRoundUp(UserStackSize, PageSize);
+    int firstStackPage = numPages - stackPages;
+
+    for (unsigned int i = 0; i < numPages; i++)
+    {
+        pageTable[i] = parent->pageTable[i];
+
+        if ((int)i >= firstStackPage)
+        {
+            int physicalPage = memoryMap->Find();
+
+            ASSERT(physicalPage != -1);
+
+            pageTable[i].physicalPage = physicalPage;
+            ownedPages[i] = true;
+
+            bzero(&(machine->mainMemory[physicalPage * PageSize]), PageSize);
+        }
+        else
+        {
+            ownedPages[i] = false;
+        }
+    }
+}
 //----------------------------------------------------------------------
 // AddrSpace::~AddrSpace
 // 	Dealloate an address space.  Nothing for now!
@@ -181,12 +195,15 @@ AddrSpace::AddrSpace(OpenFile *executable)
 
 AddrSpace::~AddrSpace()
 {
-    // Liberar paginas fisicas asociadas
+    // Libera las páginas físicas asignadas a este proceso.
     for (unsigned int i = 0; i < numPages; i++)
     {
-        int physicalPage = pageTable[i].physicalPage;
-        memoryMap->Clear(physicalPage);
+        if (ownedPages[i])
+        {
+            memoryMap->Clear(pageTable[i].physicalPage);
+        }
     }
+    delete[] this->ownedPages;
     delete[] this->pageTable;
 }
 
