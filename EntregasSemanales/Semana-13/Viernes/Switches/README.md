@@ -1,0 +1,1 @@
+De manera grupal se avanzó en clase, ligeros cambios
