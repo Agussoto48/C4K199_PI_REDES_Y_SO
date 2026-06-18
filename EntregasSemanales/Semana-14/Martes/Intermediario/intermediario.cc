@@ -5,7 +5,7 @@
 
 #include "Socket.h"
 
-#define PORT_INTERMEDIARIO 2026
+#define PORT_INTERMEDIARIO 8080
 #define SERVER_HOST "127.0.0.1"
 #define SERVER_PORT 3001
 #define BUFSIZE 4096
