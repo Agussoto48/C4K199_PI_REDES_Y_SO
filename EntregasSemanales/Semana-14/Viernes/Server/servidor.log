@@ -1,0 +1,226 @@
+[2026-04-25 17:44:27] Servidor iniciado en puerto 2026
+[2026-04-25 17:44:39] Nueva conexion aceptada
+[2026-04-25 17:44:39] Request: GET /list HTTP/1.1
+[2026-04-25 17:44:39] 200 OK - listado de figuras enviado
+[2026-04-25 17:44:43] Nueva conexion aceptada
+[2026-04-25 17:44:43] Request: GET /figura/pez/1 HTTP/1.1
+[2026-04-25 17:44:43] 200 OK - figura: pez mitad: 1
+[2026-04-25 17:44:46] Nueva conexion aceptada
+[2026-04-25 17:44:46] Request: GET /figura/pez/2 HTTP/1.1
+[2026-04-25 17:44:46] 200 OK - figura: pez mitad: 2
+[2026-04-25 17:46:23] Servidor iniciado en puerto 2026
+[2026-04-25 17:46:30] Nueva conexion aceptada
+[2026-04-25 17:46:30] Request: GET /figura/pez/3 HTTP/1.1
+[2026-04-25 17:46:30] 400 Bad Request - mitad invalida para figura: pez
+[2026-04-25 18:38:44] Servidor iniciado en puerto 2026
+[2026-04-25 18:38:58] Nueva conexion aceptada
+[2026-04-25 18:38:58] Request: GET /figura/tortuga/1 HTTP/1.1
+[2026-04-25 18:38:58] 200 OK - figura: tortuga mitad: 1
+[2026-04-25 18:39:00] Nueva conexion aceptada
+[2026-04-25 18:39:00] Request: GET /figura/tortuga/2 HTTP/1.1
+[2026-04-25 18:39:00] 200 OK - figura: tortuga mitad: 2
+[2026-04-25 18:39:22] Nueva conexion aceptada
+[2026-04-25 18:39:22] Request: GET /figura/serpiente/2 HTTP/1.1
+[2026-04-25 18:39:22] 200 OK - figura: serpiente mitad: 2
+[2026-04-25 18:39:24] Nueva conexion aceptada
+[2026-04-25 18:39:24] Request: GET /figura/serpiente/1 HTTP/1.1
+[2026-04-25 18:39:24] 200 OK - figura: serpiente mitad: 1
+[2026-04-25 18:41:15] Servidor iniciado en puerto 2026
+[2026-04-25 18:41:20] Nueva conexion aceptada
+[2026-04-25 18:41:20] Request: GET /figura/serpiente/1 HTTP/1.1
+[2026-04-25 18:41:20] 200 OK - figura: serpiente mitad: 1
+[2026-04-25 18:41:21] Nueva conexion aceptada
+[2026-04-25 18:41:21] Request: GET /figura/serpiente/2 HTTP/1.1
+[2026-04-25 18:41:21] 200 OK - figura: serpiente mitad: 2
+[2026-04-25 18:41:26] Nueva conexion aceptada
+[2026-04-25 18:41:26] Request: GET /figura/pez/1 HTTP/1.1
+[2026-04-25 18:41:26] 200 OK - figura: pez mitad: 1
+[2026-04-25 18:41:28] Nueva conexion aceptada
+[2026-04-25 18:41:28] Request: GET /figura/pez/1 HTTP/1.1
+[2026-04-25 18:41:28] 200 OK - figura: pez mitad: 1
+[2026-04-25 18:41:28] Nueva conexion aceptada
+[2026-04-25 18:41:28] Request: GET /figura/pez/2 HTTP/1.1
+[2026-04-25 18:41:28] 200 OK - figura: pez mitad: 2
+[2026-04-25 18:41:30] Nueva conexion aceptada
+[2026-04-25 18:41:30] Request: GET /figura/pez/2 HTTP/1.1
+[2026-04-25 18:41:30] 200 OK - figura: pez mitad: 2
+[2026-04-25 18:41:36] Nueva conexion aceptada
+[2026-04-25 18:41:36] Request: GET /figura/caballo/1 HTTP/1.1
+[2026-04-25 18:41:36] 200 OK - figura: caballo mitad: 1
+[2026-04-25 18:41:37] Nueva conexion aceptada
+[2026-04-25 18:41:37] Request: GET /figura/caballo/2 HTTP/1.1
+[2026-04-25 18:41:37] 200 OK - figura: caballo mitad: 2
+[2026-04-25 18:41:46] Nueva conexion aceptada
+[2026-04-25 18:41:46] Request: GET /figura/tortuga/1 HTTP/1.1
+[2026-04-25 18:41:46] 200 OK - figura: tortuga mitad: 1
+[2026-04-25 18:41:47] Nueva conexion aceptada
+[2026-04-25 18:41:47] Request: GET /figura/tortuga/2 HTTP/1.1
+[2026-04-25 18:41:47] 200 OK - figura: tortuga mitad: 2
+[2026-04-25 18:41:54] Nueva conexion aceptada
+[2026-04-25 18:41:54] Request: GET /list HTTP/1.1
+[2026-04-25 18:41:54] 200 OK - listado de figuras enviado
+[2026-04-25 18:42:13] Nueva conexion aceptada
+[2026-04-25 18:42:13] Request: GET /figura/serpiente/1 HTTP/1.1
+[2026-04-25 18:42:13] 200 OK - figura: serpiente mitad: 1
+[2026-04-25 18:42:14] Nueva conexion aceptada
+[2026-04-25 18:42:14] Request: GET /figura/serpiente/2 HTTP/1.1
+[2026-04-25 18:42:14] 200 OK - figura: serpiente mitad: 2
+[2026-04-25 18:42:16] Nueva conexion aceptada
+[2026-04-25 18:42:16] Request: GET /figura/serpiente/1 HTTP/1.1
+[2026-04-25 18:42:16] 200 OK - figura: serpiente mitad: 1
+[2026-04-25 18:42:16] Nueva conexion aceptada
+[2026-04-25 18:42:16] Request: GET /figura/serpiente/2 HTTP/1.1
+[2026-04-25 18:42:16] 200 OK - figura: serpiente mitad: 2
+[2026-04-25 18:45:35] Servidor iniciado en puerto 2026
+[2026-04-26 19:49:06] Servidor iniciado en puerto 2026
+[2026-04-26 19:49:16] Nueva conexion aceptada
+[2026-04-26 19:49:16] Request: GET /list HTTP/1.1
+[2026-04-26 19:49:16] 200 OK - listado de figuras enviado
+[2026-04-26 19:49:20] Nueva conexion aceptada
+[2026-04-26 19:49:20] Request: GET /figura/pez/1 HTTP/1.1
+[2026-04-26 19:49:20] 200 OK - figura: pez mitad: 1
+[2026-04-26 19:49:24] Nueva conexion aceptada
+[2026-04-26 19:49:24] Request: GET /figura/pez/1 HTTP/1.1
+[2026-04-26 19:49:24] 200 OK - figura: pez mitad: 1
+[2026-04-26 19:49:24] Nueva conexion aceptada
+[2026-04-26 19:49:24] Request: GET /figura/pez/2 HTTP/1.1
+[2026-04-26 19:49:24] 200 OK - figura: pez mitad: 2
+[2026-04-27 21:00:18] Servidor iniciado en puerto 2026
+[2026-04-27 21:00:33] Nueva conexion aceptada
+[2026-04-27 21:00:33] Request: GET /list HTTP/1.1
+[2026-04-27 21:00:33] 200 OK - listado de figuras enviado
+[2026-04-27 21:00:40] Nueva conexion aceptada
+[2026-04-27 21:00:40] Request: GET /figura/pez/1 HTTP/1.1
+[2026-04-27 21:00:40] 200 OK - figura: pez mitad: 1
+[2026-04-27 21:02:42] Nueva conexion aceptada
+[2026-04-27 21:02:42] Request: GET /list HTTP/1.1
+[2026-04-27 21:02:42] 200 OK - listado de figuras enviado
+[2026-04-28 10:05:22] Servidor iniciado en puerto 2026
+[2026-04-28 10:05:35] Nueva conexion aceptada
+[2026-04-28 10:05:35] Request: GET /list HTTP/1.1
+[2026-04-28 10:05:35] 200 OK - listado de figuras enviado
+[2026-04-28 10:05:52] Nueva conexion aceptada
+[2026-04-28 10:05:52] Request: GET /figura/pez/1 HTTP/1.1
+[2026-04-28 10:05:52] 200 OK - figura: pez mitad: 1
+[2026-04-28 10:07:05] Nueva conexion aceptada
+[2026-04-28 10:07:05] Nueva conexion aceptada
+[2026-04-28 10:07:05] Request: GET /list HTTP/1.1
+[2026-04-28 10:07:05] 200 OK - listado de figuras enviado
+[2026-04-28 10:07:05] Request: GET /favicon.ico HTTP/1.1
+[2026-04-28 10:07:05] 400 Bad Request - solicitud invalida
+[2026-04-28 10:28:14] Servidor iniciado en puerto 2026
+[2026-04-28 10:28:27] Servidor iniciado en puerto 2026
+[2026-04-28 10:28:44] Nueva conexion aceptada
+[2026-04-28 10:28:44] Request: GET /list HTTP/1.1
+[2026-04-28 10:28:44] 200 OK - listado de figuras enviado
+[2026-04-28 10:29:05] Nueva conexion aceptada
+[2026-04-28 10:29:05] Request: GET /figura/pez/1 HTTP/1.1
+[2026-04-28 10:29:05] 200 OK - figura: pez mitad: 1
+[2026-04-28 10:29:53] Nueva conexion aceptada
+[2026-04-28 10:29:53] Request: GET / HTTP/1.1
+[2026-04-28 10:29:53] 400 Bad Request - solicitud invalida
+[2026-04-28 10:29:53] Nueva conexion aceptada
+[2026-04-28 10:29:53] Request: GET /favicon.ico HTTP/1.1
+[2026-04-28 10:29:53] 400 Bad Request - solicitud invalida
+[2026-04-28 10:29:55] Nueva conexion aceptada
+[2026-04-28 10:29:55] Request: GET / HTTP/1.1
+[2026-04-28 10:29:55] 400 Bad Request - solicitud invalida
+[2026-04-28 10:30:02] Nueva conexion aceptada
+[2026-04-28 10:30:02] Request: GET /favicon.ico HTTP/1.1
+[2026-04-28 10:30:02] 400 Bad Request - solicitud invalida
+[2026-04-28 10:30:19] Nueva conexion aceptada
+[2026-04-28 10:30:19] Request: GET /figura/pez/1 HTTP/1.1
+[2026-04-28 10:30:19] 200 OK - figura: pez mitad: 1
+[2026-04-28 10:30:20] Nueva conexion aceptada
+[2026-04-28 10:30:20] Request: GET /figura/tortuga/1 HTTP/1.1
+[2026-04-28 10:30:20] 200 OK - figura: tortuga mitad: 1
+[2026-04-28 10:30:32] Nueva conexion aceptada
+[2026-04-28 10:30:38] Nueva conexion aceptada
+[2026-04-28 10:30:38] Request: GET /list HTTP/1.1
+[2026-04-28 10:30:38] 200 OK - listado de figuras enviado
+[2026-04-28 10:30:39] Request: GET /figura/pez/1 HTTP/1.1
+[2026-04-28 10:30:39] 200 OK - figura: pez mitad: 1
+[2026-04-28 10:30:51] Nueva conexion aceptada
+[2026-04-28 10:30:51] Request: GET /serpiente/2 HTTP/1.1
+[2026-04-28 10:30:51] 400 Bad Request - solicitud invalida
+[2026-04-28 10:30:57] Nueva conexion aceptada
+[2026-04-28 10:30:57] Request: GET /serpiente/0 HTTP/1.1
+[2026-04-28 10:30:57] 400 Bad Request - solicitud invalida
+[2026-04-28 10:31:15] Nueva conexion aceptada
+[2026-04-28 10:31:15] Request: GET /figura/pez/ HTTP/1.1
+[2026-04-28 10:31:15] 400 Bad Request - solicitud invalida
+[2026-04-28 10:31:21] Nueva conexion aceptada
+[2026-04-28 10:31:21] Request: GET /figura/pez/2 HTTP/1.1
+[2026-04-28 10:31:21] 200 OK - figura: pez mitad: 2
+[2026-04-28 10:31:22] Nueva conexion aceptada
+[2026-04-28 10:31:27] Request: 
+[2026-04-28 10:31:27] 400 Bad Request - solicitud invalida
+[2026-04-28 10:31:31] Nueva conexion aceptada
+[2026-04-28 10:31:31] Request: GET /figura/pez/2 HTTP/1.1
+[2026-04-28 10:31:31] 200 OK - figura: pez mitad: 2
+[2026-06-11 19:53:17] Servidor iniciado en puerto 3001
+[2026-06-11 19:53:24] Nueva conexion aceptada
+[2026-06-11 19:53:24] Request: GET /list HTTP/1.0
+[2026-06-11 19:53:24] 200 OK - listado de figuras enviado
+[2026-06-11 19:54:35] Servidor iniciado en puerto 3001
+[2026-06-11 19:56:49] Servidor iniciado en puerto 3001
+[2026-06-11 19:56:58] Nueva conexion aceptada
+[2026-06-11 19:56:58] Request: GET /list HTTP/1.0
+[2026-06-11 19:56:58] 200 OK - listado de figuras enviado
+[2026-06-11 19:57:11] Nueva conexion aceptada
+[2026-06-11 19:57:11] Request: GET /figura/dragon/1 HTTP/1.0
+[2026-06-11 19:57:11] 200 OK - figura: dragon mitad: 1
+[2026-06-13 15:44:09] Servidor iniciado en puerto 3001
+[2026-06-13 15:44:52] Nueva conexion aceptada
+[2026-06-13 15:44:52] Request: GET /list HTTP/1.0
+[2026-06-13 15:44:52] 200 OK - listado de figuras enviado
+[2026-06-13 15:46:01] Servidor iniciado en puerto 3001
+[2026-06-13 15:46:08] Nueva conexion aceptada
+[2026-06-13 15:46:08] Request: GET /list HTTP/1.0
+[2026-06-13 15:46:08] 200 OK - listado de figuras enviado
+[2026-06-13 18:16:30] Servidor iniciado en puerto 3001
+[2026-06-13 18:17:18] Servidor iniciado en puerto 3001
+[2026-06-13 18:18:43] Servidor iniciado en puerto 3001
+[2026-06-13 18:20:30] Nueva conexion aceptada
+[2026-06-13 18:20:30] Request: GET /list HTTP/1.0
+[2026-06-13 18:20:30] 200 OK - listado de figuras enviado
+[2026-06-13 18:21:39] Servidor iniciado en puerto 3001
+[2026-06-13 18:22:39] Servidor iniciado en puerto 3001
+[2026-06-13 18:25:00] Servidor iniciado en puerto 3001
+[2026-06-13 18:25:24] Nueva conexion aceptada
+[2026-06-13 18:25:24] Request: GET /figura/pez/1 HTTP/1.0
+[2026-06-13 18:25:24] 200 OK - figura: pez mitad: 1
+[2026-06-15 17:41:51] Servidor iniciado en puerto 3001
+[2026-06-15 17:44:16] Servidor iniciado en puerto 3001
+[2026-06-15 17:49:00] Servidor iniciado en puerto 3001
+[2026-06-15 17:51:23] Nueva conexion aceptada
+[2026-06-15 17:51:23] Request: GET /list HTTP/1.0
+[2026-06-15 17:51:23] 200 OK - listado de figuras enviado
+[2026-06-18 18:55:04] Servidor iniciado en puerto 3001
+[2026-06-18 18:56:28] Nueva conexion aceptada
+[2026-06-18 18:56:28] Request: GET /list HTTP/1.0
+[2026-06-18 18:56:28] 200 OK - listado de figuras enviado
+[2026-06-18 18:56:36] Nueva conexion aceptada
+[2026-06-18 18:56:36] Request: GET /figura/pez/2 HTTP/1.0
+[2026-06-18 18:56:36] 200 OK - figura: pez mitad: 2
+[2026-06-18 19:19:46] Servidor iniciado en puerto 3001
+[2026-06-18 19:22:42] Nueva conexion aceptada
+[2026-06-18 19:22:42] Request: GET /list HTTP/1.0
+[2026-06-18 19:22:42] 200 OK - listado de figuras enviado
+[2026-06-18 19:22:50] Nueva conexion aceptada
+[2026-06-18 19:22:50] Request: GET /figura/pez/1 HTTP/1.0
+[2026-06-18 19:22:50] 404 Not Found - figura: pez mitad: 1
+[2026-06-18 19:30:27] Servidor iniciado en puerto 3001
+[2026-06-18 19:35:03] Servidor iniciado en puerto 3001
+[2026-06-18 19:36:19] Servidor iniciado en puerto 3001
+[2026-06-18 19:37:17] Servidor iniciado en puerto 3001
+[2026-06-18 19:38:13] Servidor iniciado en puerto 3001
+[2026-06-18 19:38:48] Nueva conexion aceptada
+[2026-06-18 19:38:48] Request: GET /list HTTP/1.0
+[2026-06-18 19:38:48] 200 OK - listado de figuras enviado
+[2026-06-18 19:38:57] Nueva conexion aceptada
+[2026-06-18 19:38:57] Request: GET /figura/pez/1 HTTP/1.0
+[2026-06-18 19:38:57] 404 Not Found - figura: pez mitad: 1
+[2026-06-18 19:38:57] Nueva conexion aceptada
+[2026-06-18 19:38:57] Request: GET /figura/pez/1 HTTP/1.0
+[2026-06-18 19:38:57] 404 Not Found - figura: pez mitad: 1
